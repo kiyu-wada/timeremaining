@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Countdown</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+        
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #191919; /* matching Notion grey background */
+            color: #ffffff; /* white text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto repeat(7, 20px);
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .week-label {
+            font-weight: 400;
+            color: #ffffff;
+            text-align: center;
+            font-size: 0.9em; /* slightly smaller font */
+        }
+
+        .day-header div, .grid input[type="checkbox"], .grid .week-label {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9em; /* slightly smaller font */
+        }
+
+        .day-header div {
+            font-weight: 400;
+        }
+
+        .day-checkbox {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: 1px solid #ffffff;
+            cursor: pointer;
+        }
+
+        .day-checkbox:checked {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Remaining</h1>
+        <div class="grid">
+            <div></div>
+            <div>S</div>
+            <div>M</div>
+            <div>T</div>
+            <div>W</div>
+            <div>T</div>
+            <div>F</div>
+            <div>S</div>
+
+
+            <div class="week-label">6/16</div>
+            <input type="checkbox" class="day-checkbox" id="6-16-sun">
+            <input type="checkbox" class="day-checkbox" id="6-16-mon">
+            <input type="checkbox" class="day-checkbox" id="6-16-tue">
+            <input type="checkbox" class="day-checkbox" id="6-16-wed">
+            <input type="checkbox" class="day-checkbox" id="6-16-thu">
+            <input type="checkbox" class="day-checkbox" id="6-16-fri">
+            <input type="checkbox" class="day-checkbox" id="6-16-sat">
+
+            <div class="week-label">6/23</div>
+            <input type="checkbox" class="day-checkbox" id="6-23-sun">
+            <input type="checkbox" class="day-checkbox" id="6-23-mon">
+            <input type="checkbox" class="day-checkbox" id="6-23-tue">
+            <input type="checkbox" class="day-checkbox" id="6-23-wed">
+            <input type="checkbox" class="day-checkbox" id="6-23-thu">
+            <input type="checkbox" class="day-checkbox" id="6-23-fri">
+            <input type="checkbox" class="day-checkbox" id="6-23-sat">
+
+            <div class="week-label">6/30</div>
+            <input type="checkbox" class="day-checkbox" id="6-30-sun">
+            <input type="checkbox" class="day-checkbox" id="6-30-mon">
+            <input type="checkbox" class="day-checkbox" id="6-30-tue">
+            <input type="checkbox" class="day-checkbox" id="6-30-wed">
+            <input type="checkbox" class="day-checkbox" id="6-30-thu">
+            <input type="checkbox" class="day-checkbox" id="6-30-fri">
+            <input type="checkbox" class="day-checkbox" id="6-30-sat">
+
+            <div class="week-label">7/7</div>
+            <input type="checkbox" class="day-checkbox" id="7-7-sun">
+            <input type="checkbox" class="day-checkbox" id="7-7-mon">
+            <input type="checkbox" class="day-checkbox" id="7-7-tue">
+            <input type="checkbox" class="day-checkbox" id="7-7-wed">
+            <input type="checkbox" class="day-checkbox" id="7-7-thu">
+            <input type="checkbox" class="day-checkbox" id="7-7-fri">
+            <input type="checkbox" class="day-checkbox" id="7-7-sat">
+
+            <div class="week-label">7/14</div>
+            <input type="checkbox" class="day-checkbox" id="7-14-sun">
+            <input type="checkbox" class="day-checkbox" id="7-14-mon">
+            <input type="checkbox" class="day-checkbox" id="7-14-tue">
+            <input type="checkbox" class="day-checkbox" id="7-14-wed">
+            <input type="checkbox" class="day-checkbox" id="7-14-thu">
+            <input type="checkbox" class="day-checkbox" id="7-14-fri">
+            <input type="checkbox" class="day-checkbox" id="7-14-sat">
+
+            <div class="week-label">7/21</div>
+            <input type="checkbox" class="day-checkbox" id="7-21-sun">
+            <input type="checkbox" class="day-checkbox" id="7-21-mon">
+            <input type="checkbox" class="day-checkbox" id="7-21-tue">
+            <input type="checkbox" class="day-checkbox" id="7-21-wed">
+            <input type="checkbox" class="day-checkbox" id="7-21-thu">
+            <input type="checkbox" class="day-checkbox" id="7-21-fri">
+            <input type="checkbox" class="day-checkbox" id="7-21-sat">
+
+            <div class="week-label">7/28</div>
+            <input type="checkbox" class="day-checkbox" id="7-28-sun">
+            <input type="checkbox" class="day-checkbox" id="7-28-mon">
+            <input type="checkbox" class="day-checkbox" id="7-28-tue">
+            <input type="checkbox" class="day-checkbox" id="7-28-wed">
+            <input type="checkbox" class="day-checkbox" id="7-28-thu">
+            <input type="checkbox" class="day-checkbox" id="7-28-fri">
+            <input type="checkbox" class="day-checkbox" id="7-28-sat">
+
+            <div class="week-label">8/4</div>
+            <input type="checkbox" class="day-checkbox" id="8-4-sun">
+            <input type="checkbox" class="day-checkbox" id="8-4-mon">
+            <input type="checkbox" class="day-checkbox" id="8-4-tue">
+            <input type="checkbox" class="day-checkbox" id="8-4-wed">
+            <input type="checkbox" class="day-checkbox" id="8-4-thu">
+            <input type="checkbox" class="day-checkbox" id="8-4-fri">
+            <input type="checkbox" class="day-checkbox" id="8-4-sat">
+
+            <div class="week-label">8/11</div>
+            <input type="checkbox" class="day-checkbox" id="8-11-sun">
+            <input type="checkbox" class="day-checkbox" id="8-11-mon">
+            <input type="checkbox" class="day-checkbox" id="8-11-tue">
+            <input type="checkbox" class="day-checkbox" id="8-11-wed">
+            <input type="checkbox" class="day-checkbox" id="8-11-thu">
+            <input type="checkbox" class="day-checkbox" id="8-11-fri">
+            <input type="checkbox" class="day-checkbox" id="8-11-sat">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const checkboxes = document.querySelectorAll('.day-checkbox');
+
+            checkboxes.forEach(checkbox => {
+                const id = checkbox.id;
+                checkbox.checked = localStorage.getItem(id) === 'true';
+
+                checkbox.addEventListener('change', () => {
+                    localStorage.setItem(id, checkbox.checked);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
